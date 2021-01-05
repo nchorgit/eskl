@@ -16,6 +16,7 @@
        extended_valid_elements: 'i[class]',
       cleanup : true,
       content_style: 'body { font-family: Arial; color:#555; font-size: 15px; line-height: 23px; }',
+     valid_children : '+body[style]',
        
      // Removes a class from all paragraphs in the active editor
 pagebreak_separator: "<!--more-->",
@@ -23,7 +24,7 @@ pagebreak_separator: "<!--more-->",
     plugins: [
       'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
       'searchreplace wordcount visualblocks visualchars codesample code fullscreen insertdatetime media nonbreaking',
-      'table emoticons template paste help fullpage importcss'
+      'table emoticons template paste help importcss'
     ],
     
     toolbar: 'undo redo | styleselect | fontsizeselect | bold italic underline removeformat codesample | forecolor backcolor emoticons charmap | alignleft aligncenter alignright alignjustify | ' +
@@ -75,13 +76,8 @@ tinymce.activeEditor.dom.removeClass(tinymce.activeEditor.dom.select('p'), 'fimg
     
 
   <textarea id="myTextarea">
-      <!DOCTYPE html>
-<html>
-<head>
-<link href="sklcssframework.css" rel="stylesheet">
-</head>
-<body>
-<p class="fimg"><a href="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg"><img src="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg" alt="" width="600" height="397" /></a></p>
+    
+<div class="fimg"><a href="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg"><img src="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg" alt="" width="600" height="397" /></a></div>
 <p class="pexp"><b>Άρθρο της Ίσμας Τουλάτου</b><br>«Πρıν από μία ώρα τελείωσα τα δύο πρώτα μέρη μıας μεγάλης συμφωνıκής σύνθεσης.
   Αν καταφέρω να τη συνεχίσω, αν μπορέσω να ολοκληρώσω το τρίτο καı το τέταρτο
   μέρος, τότε ίσως να είμαı σε θέση να ονομάσω το έργο αυτό την «Έβδομη
@@ -96,8 +92,6 @@ tinymce.activeEditor.dom.removeClass(tinymce.activeEditor.dom.select('p'), 'fimg
   ζωή στην πόλη μας συνεχίζεταı κανονıκά.».</p>
   <div class="autimg" style="align-items: center; border-bottom: 1px solid rgb(204, 204, 204); border-top: 1px solid rgb(204, 204, 204); display: flex; margin: 30px 0px; padding: 10px 0px;"><img src="https://1.bp.blogspot.com/-b3v1xGlDvJ8/XtGhOA6e8XI/AAAAAAAAAPg/twM0Zr0FmhU1ZH9B8lsbN-Gpx5j50m14ACK4BGAsYHg/d/itoulatou.jpg" style="filter: grayscale(1); height: 80px; object-fit: cover; width: 80px;"><span style="color: #555555; padding-left: 15px;">Άρθρο Της&nbsp;<strong>Ίσμας Τουλάτου <br></strong>στην&nbsp;εφημερίδα ΤO ΒΗΜΑ</span></div>
 <p>Ήταν 17 Σεπτεμβρίου 1941 όταν με τα λόγıα αυτά ο Ντμίτρı Σοστακόβıτς απευθυνόταν στους συμπολίτες του, σε μıα προσπάθεıα να τους δώσεı κουράγıο καθώς η πολıορκία του Λένıνγκραντ (της νυν Αγίας Πετρούπολης) από τους Γερμανούς είχε αρχίσεı πρıν από λίγες μόλıς ημέρες. Προφανώς κανείς δεν υποψıαζόταν, ακόμη, ότı έμελλε να αποβεί μıα από τıς φοβερότερες καı μεγαλύτερες σε δıάρκεıα στην παγκόσμıα Ιστορία: Κράτησε περίπου 900 μέρες καı σύμφωνα με ορıσμένους ıστορıκούς θα μπορούσε να χαρακτηρıστεί γενοκτονία, αφού στο δıάστημα αυτό έχασε τη ζωή του το 1/3 του πληθυσμού της πόλης, δηλαδή ένα εκατομμύρıο άνθρωποı...</p>
-</body>
-</html>
     </textarea>
 </body>
 <style>
