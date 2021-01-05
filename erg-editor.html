@@ -16,14 +16,14 @@
        extended_valid_elements: 'i[class]',
       cleanup : true,
       content_style: 'body { font-family: Arial; color:#555; font-size: 15px; line-height: 23px; }',
-      
+      valid_children : '+body[style]',
      // Removes a class from all paragraphs in the active editor
 pagebreak_separator: "<!--more-->",
     
     plugins: [
       'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
       'searchreplace wordcount visualblocks visualchars codesample code fullscreen insertdatetime media nonbreaking',
-      'table emoticons template paste help fullpage importcss'
+      'table emoticons template paste help importcss'
     ],
     
     toolbar: 'undo redo | styleselect | fontsizeselect | bold italic underline removeformat codesample | forecolor backcolor emoticons charmap | alignleft aligncenter alignright alignjustify | ' +
@@ -75,16 +75,11 @@ tinymce.activeEditor.dom.removeClass(tinymce.activeEditor.dom.select('p'), 'fimg
     
 
   <textarea id="myTextarea">
-      <!DOCTYPE html>
-<html>
-<head>
-<link href="sklcssframework.css" rel="stylesheet">
-</head>
-<body>
-<p class="fimg"><a href="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg"><img src="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg" alt="" width="600" height="397" /></a></p>
+      
+<div class="fimg"><a href="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg"><img src="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg" alt="" width="600" height="397" /></a></div>
 <p>Παράγραφος</p>
 </body>
-</html>
+
     </textarea>
 </body>
 <style>
