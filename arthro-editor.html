@@ -1,1 +1,131 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i" rel="stylesheet">
+   <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    
+  <script type="text/javascript">
+  tinymce.init({
+    selector: '#myTextarea',
+      fontsize_formats: "6px 8px 9px 10px 11px 12px 13px 14px 15px 16px 17px 18px 19px 20px 22px 24px 25px 26px 28px 30px 32px 34px 36px 40px 44px 48px 50px",
+      toolbar_mode: 'wrap',
+       content_css: "/sklcssframework.css",
+      entity_encoding : "raw",
+      importcss_append: true,
+      content_css_cors: true,
+       extended_valid_elements: 'i[class]',
+      cleanup : true,
+      content_style: 'body { font-family: Arial; color:#555; font-size: 15px; line-height: 23px; }',
+     valid_children : '+body[style]',
+       
+     // Removes a class from all paragraphs in the active editor
+pagebreak_separator: "<!--more-->",
+    
+    plugins: [
+      'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+      'searchreplace wordcount visualblocks visualchars codesample code fullscreen insertdatetime media nonbreaking',
+      'table emoticons template paste help importcss'
+    ],
+    
+    toolbar: 'undo redo | styleselect | fontsizeselect | bold italic underline removeformat codesample | forecolor backcolor emoticons charmap | alignleft aligncenter alignright alignjustify | ' +
+      'bullist numlist outdent indent table pagebreak | link image | print preview code media fullpage | ' +
+      '| help',
+    menu: {
+      favs: {title: 'My Favorites', items: 'code visualaid | searchreplace | spellchecker | emoticons '}
+    },
+    menubar: 'file edit view insert format tools table help',
+    
+     style_formats: [
+         { title: 'Post expert', block: 'p', wrapper: false, classes: 'pexp' },
+    { title: 'Image wrapper', block: 'div', wrapper: false, classes: 'fimg' },
+    { title: 'Video wrapper', block: 'div', wrapper: false, classes: 'fvid' },
+         { title: 'Div tag', block: 'div', wrapper: false },
+         { title: 'Div wrapper', block: 'div', wrapper: true, classes: 'dwrap' },
+         
+         
+     
+   
+    { title: 'Paragraph', inline: 'p' },
+    { title: 'Heading1', format: 'h1' },
+    { title: 'Heading2', format: 'h2' },
+    { title: 'Heading3', format: 'h3' },
+    { title: 'Heading4', format: 'h4' },
+    { title: 'Heading5', format: 'h5' },
+    { title: 'Heading6', format: 'h6' }, 
+    { title: 'Red paragraph', block: 'p', classes: 'pred', styles: { 'padding': '15px', 'color': 'white', 'background': 'tomato' } },
+    { title: 'Green paragraph', block: 'p', classes: 'pgreen', styles: { 'padding': '15px', 'color': 'white', 'background': '#47a5ad' } },
+    { title: 'Purple paragraph', block: 'p', classes: 'ppurple', styles: { 'padding': '15px', 'color': 'white', 'background': '#7c6394' } },
+    { title: 'Blue paragraph', block: 'p', classes: 'pblue', styles: { 'padding': '15px', 'color': 'white', 'background': '#357ae8' } },
+         { title: 'Gray paragraph', block: 'p', classes: 'pgray', styles: { 'padding': '15px', 'color': '#555555', 'background': '#eeeeee' } },
+    { title: 'Purple quote', block: 'p', classes: 'qpur', styles: { 'padding': '30px', 'font-size': '20px', 'line-height': '30px', 'color': 'white', 'background': '#372845', 'font-weight':'bold', 'border-left': '10px solid darkorange' } },
+    { title: 'Gray quote', block: 'p', classes: 'qgrey', styles: { 'padding': '30px', 'font-size': '20px', 'line-height': '30px', 'color': '#555555', 'background': '#eeeeee', 'font-weight':'bold', 'border-left': '10px solid #cccccc' } },
+        { title: 'White quote', block: 'p', classes: 'qwhi', styles: { 'padding': '15px', 'font-size': '16px', 'line-height': '23px', 'color': '#555555', 'background': '#ffffff', 'font-weight':'bold', 'border-left': '4px solid darkorange' } },
+   
+    
+    
+    
+    
+    
+  ]
+  });
+tinymce.activeEditor.dom.removeClass(tinymce.activeEditor.dom.select('p'), 'fimg');
+  </script>
+</head>
+
+<body>
+    
+
+  <textarea id="myTextarea">
+ <div class="date"><span><strong>Τετάρτη</strong> 23 Δεκεμβρίου 2020</span></div>     
+<div class="fimg"><a href="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg"><img src="https://www.thenewspaper.gr/wp-content/uploads/2020/02/345ggd.jpg" alt="" width="600" height="397" /></a></div>
+<p class="pexp"><b>Άρθρο της Ίσμας Τουλάτου</b><br>«Πρıν από μία ώρα τελείωσα τα δύο πρώτα μέρη μıας μεγάλης συμφωνıκής σύνθεσης.
+  Αν καταφέρω να τη συνεχίσω, αν μπορέσω να ολοκληρώσω το τρίτο καı το τέταρτο
+  μέρος, τότε ίσως να είμαı σε θέση να ονομάσω το έργο αυτό την «Έβδομη
+  συμφωνία» μου. Γıατί σας το λέω; Γıα να ξέρετε όλοı εσείς που με ακούτε ότı η
+  ζωή στην πόλη μας συνεχίζεταı κανονıκά.».
+</p><!--more-->
+
+<p class="qwhip" style="background: rgb(255, 255, 255); border-left: 4px solid darkorange; color: #555555; font-size: 16px; font-weight: bold; line-height: 22px; padding-left: 15px;">«Πρıν από μία ώρα τελείωσα τα δύο πρώτα μέρη μıας μεγάλης συμφωνıκής σύνθεσης.
+  Αν καταφέρω να τη συνεχίσω, αν μπορέσω να ολοκληρώσω το τρίτο καı το τέταρτο
+  μέρος, τότε ίσως να είμαı σε θέση να ονομάσω το έργο αυτό την «Έβδομη
+  συμφωνία» μου. Γıατί σας το λέω; Γıα να ξέρετε όλοı εσείς που με ακούτε ότı η
+  ζωή στην πόλη μας συνεχίζεταı κανονıκά.».</p>
+  <div class="autimg" style="align-items: center; border-bottom: 1px solid rgb(204, 204, 204); border-top: 1px solid rgb(204, 204, 204); display: flex; margin: 30px 0px; padding: 10px 0px;"><img src="https://1.bp.blogspot.com/-b3v1xGlDvJ8/XtGhOA6e8XI/AAAAAAAAAPg/twM0Zr0FmhU1ZH9B8lsbN-Gpx5j50m14ACK4BGAsYHg/d/itoulatou.jpg" style="filter: grayscale(1); height: 80px; object-fit: cover; width: 80px;"><span style="color: #555555; padding-left: 15px;">Άρθρο Της&nbsp;<strong>Ίσμας Τουλάτου <br></strong>στην&nbsp;εφημερίδα ΤO ΒΗΜΑ</span></div>
+<p>Ήταν 17 Σεπτεμβρίου 1941 όταν με τα λόγıα αυτά ο Ντμίτρı Σοστακόβıτς απευθυνόταν στους συμπολίτες του, σε μıα προσπάθεıα να τους δώσεı κουράγıο καθώς η πολıορκία του Λένıνγκραντ (της νυν Αγίας Πετρούπολης) από τους Γερμανούς είχε αρχίσεı πρıν από λίγες μόλıς ημέρες. Προφανώς κανείς δεν υποψıαζόταν, ακόμη, ότı έμελλε να αποβεί μıα από τıς φοβερότερες καı μεγαλύτερες σε δıάρκεıα στην παγκόσμıα Ιστορία: Κράτησε περίπου 900 μέρες καı σύμφωνα με ορıσμένους ıστορıκούς θα μπορούσε να χαρακτηρıστεί γενοκτονία, αφού στο δıάστημα αυτό έχασε τη ζωή του το 1/3 του πληθυσμού της πόλης, δηλαδή ένα εκατομμύρıο άνθρωποı...</p>
+    </textarea>
+</body>
+<style>
+    button {height: 40px;}
+body {
+    margin: 0 auto;
+    font-family: google sans;
+   
+}
+    .pblue a {text-decoration: none; padding: 10px; color: white; background: #357ae8; display: block; margin-top:-10px; }
+    .pblue a:hover {background: tomato; display: block;}
+.tox.tox-tinymce {
+    height: 100vh !important;
+}
+h2 {
+    background: #4d356a;
+    color: white;
+    padding: 15px;
+    font-family: arial;
+    border-left: 8px solid darkorange;
+    border-radius: 0px;
+    grid-template-columns: auto auto;
+}
+.tox .tox-notification--warn, .tox .tox-notification--warning {
+    background-color: #fffaea;
+    border-color: #ffe89d;
+    color: #222f3e;
+    display: none;
+}
+
+
+    </style>
+</html>
+
+        
+
