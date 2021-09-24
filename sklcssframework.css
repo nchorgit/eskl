@@ -21,7 +21,11 @@
 .autimg span {}
 .qwhip {background: #ffffff; border-left: 4px solid darkorange; color: #555555; font-size: 16px; font-weight: bold; line-height: 22px; padding-left: 15px;}
 
-
+p img, .fimg img, .separator img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
 
 .sdib {
   display: inline-block;
