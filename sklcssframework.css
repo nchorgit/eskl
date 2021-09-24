@@ -1,3 +1,28 @@
+// ERG SKL
+.pblue {padding:15px;color:white;background:#357ae8;} 
+.ppurple {padding:15px;color:white;background:#7c6394;} 
+.pred {padding:15px;color:white;background:tomato;} 
+.pgreen {padding:15px;color:white;background:#47a5ad;} 
+.qgrey {padding: 30px; font-size: 20px; line-height: 30px; color: #555555; background: #eeeeee; font-weight: bold; border-left: 10px solid #cccccc;}
+.date {
+  margin: 15px 0 15px 0;
+  background: #f8f8f8;
+  font-size: 15px;
+  padding: 8px 20px;
+  font-weight: normal;
+  border-left: 2px solid #ccc;
+  color: #444;
+  padding-left: 35px;
+}
+.pgray  {background: #eeeeee; color: #555555; padding: 15px;}
+.qpur {padding: 30px; font-size: 20px; line-height: 30px; color: white; background: #372845; font-weight: bold; border-left: 10px solid darkorange;}
+.autimg {align-items: center; border-bottom: 1px solid #cccccc; border-top: 1px solid #cccccc; display: flex; margin: 30px 0px; padding: 10px 0px;}
+.autimg img {filter: grayscale(1); height: 80px; object-fit: cover; width: 80px;}
+.autimg span {}
+.qwhip {background: #ffffff; border-left: 4px solid darkorange; color: #555555; font-size: 16px; font-weight: bold; line-height: 22px; padding-left: 15px;}
+
+
+
 .sdib {
   display: inline-block;
 }
