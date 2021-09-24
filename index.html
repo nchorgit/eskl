@@ -1,1 +1,167 @@
 
+<div class="editor">
+<div class="left-top"><p><img src="https://svgshare.com/i/LZF.svg"><span style="font-weight:bold; margin-right: 3px;">ergskl</span> CMS
+<span style="font-size: small; margin-left: 12px; background: tomato; color: #eee; padding: 6px; border-radius: 4px;">Version 3</span></p>
+<p class="dashb"><img style="width:28px; filter: invert(1) contrast(2); margin-right: 10px; margin-left: 20px;" src="https://image.flaticon.com/icons/svg/106/106839.svg"></p>
+<p><a href='javascript:myFunction4()'><img src="https://image.flaticon.com/icons/svg/159/159591.svg">Μεταφόρτωση εικόνας</a></p>
+<p><a href="https://www.erg-sklavenitis.gr/" target="_blank"><img src="https://image.flaticon.com/icons/svg/159/159604.svg">Προβολή Ιστοσελίδας</a></p>
+<input type="text" placeholder="Τίτλος ανάρτησης"/>
+</div>
+<div class="left-menu">
+<div class="llink"><a href="arthro.html" target="_top"><img src="https://image.flaticon.com/icons/svg/3077/3077226.svg" style="filter: invert(1) contrast(2);">Πρότυπο άρθρο</a></div>	
+<div class="left-forms">Συνδέσεις<img src="https://image.flaticon.com/icons/svg/32/32195.svg"></div>
+<div class="llink"><a href="javascript:myFunction()"><img src="https://image.flaticon.com/icons/svg/2111/2111343.svg">Blogger</a></div>
+<div class="llink"><a href="javascript:myFunction2()"><img src="https://image.flaticon.com/icons/svg/2111/2111436.svg">Google Drive</a></div>
+<div class="llink"><a href="javascript:myFunction3()"><img src="https://image.flaticon.com/icons/svg/732/732200.svg">Gmail</a></div>
+<div class="left-forms"><b>Συγκέντρωση δεδομένων</b><img src="https://image.flaticon.com/icons/svg/32/32195.svg"></div>
+<div class="llink"><a href="https://docs.google.com/spreadsheets/d/1LyoJeRXtycTVhM3-ZFXsRsE1k72uUDYDuH30W_ZHKdo/edit#gid=2022790716" target="_blank"><img src="https://image.flaticon.com/icons/svg/159/159050.svg" style="filter: invert(1) contrast(2);">Φόρμα Επικοινωνίας</a></div>
+<div class="llink"><a href="https://docs.google.com/spreadsheets/d/1MefAs64HjLRr_3aCxe-dZMNKv4z5QNMG44VH9-vWPP0/edit#gid=1770211868" target="_blank"><img src="https://image.flaticon.com/icons/svg/159/159092.svg" style="filter: invert(1) contrast(2);">Αιτήσεις Εγγραφής</a></div><div class="left-forms"><b>Αναζήτηση φωτογραφιών</b><img src="https://image.flaticon.com/icons/svg/32/32195.svg"></div>
+<div class="llink">
+<a href="https://pixabay.com/el/" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/739/739198.svg" style="filter: invert(1) contrast(2);">Pixabay</a></div>
+<div class="llink"><a href="https://www.pexels.com/" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/739/739198.svg" style="filter: invert(1) contrast(2);">Pexels</a></div>
+
+	
+</div>
+<iframe src="erg-editor.html"></iframe>
+
+</div>
+
+<style>
+body {
+	font-family:arial;
+    margin: 0 auto;
+}
+	a, a:hover {transition: all .3s;}    
+.left-top {
+    padding: 0;
+    font-size: 20px;
+    color: #eee;
+    background: #47a5ad;
+ 
+    display: flex;
+    align-items: center;
+    height: 78px;
+}
+.left-top p:nth-child(1) {
+    padding: 15px;
+    background: #372845;
+    width: 300px;
+}
+.left-top p {
+    display: flex;
+    align-items: center;
+}
+
+p.dashb {
+    padding: 0 15px;
+}
+
+p a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #3F51B5;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    margin-left: 15px;
+    font-size: medium;
+    font-weight: bold;
+}
+p a:hover {
+background:#334294}
+p a img {
+    filter: invert(1);
+    width: 24px !important;
+}
+.left-top img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.left-menu {
+    max-width: 330px;
+    background: #444;
+    height: 100%;
+}
+
+.left-forms {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    
+    color: #ccc;
+    background: #222;
+    font-weight: bold;
+}
+
+.left-forms img {
+    width: 14px;
+    filter: invert(80%) sepia() saturate(10000%) hue-rotate(-49deg);
+    margin-left: 7px;
+    margin-top: 2px;
+    }
+.llink a {
+    padding: 15px;
+    background: #444;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.llink a:hover {
+    
+    background: #555;
+    color: white;
+  
+    text-decoration: none;
+    border-bottom: 1px solid #777;
+}
+
+.llink img {
+	width:14px;
+    margin-right:10px;
+}
+.llink1 a {
+    padding: 15px;
+    background: #666;
+    color: white;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+input[type="text"] {
+    padding: 18px;
+    border: 0;
+    border-radius: 4px;
+    display: block;
+    width: 40%;
+    margin-left: 15px;
+    outline: none;
+    font-weight: bold;
+}
+iframe {
+    position: absolute;
+    top: 100;
+    left: 350px;
+    border: 0;
+    width: 80%;
+    height: 800px;
+}
+</style>
+
+<script>
+function myFunction() {
+   window.open("https://draft.blogger.com/blog/posts/8081769977919661198?hl=el&tab=jj", "", "width=1200,height=1000");
+}
+function myFunction2() {
+   window.open("https://drive.google.com/drive/u/2/my-drive", "", "width=1200,height=1000");
+}
+function myFunction3() {
+   window.open("https://mail.google.com/mail/u/0/#inbox", "", "width=1200,height=1000");
+}
+function myFunction4() {
+   window.open("https://gifyu.com/upload", "", "width=600,height=600");
+}
+</script>
